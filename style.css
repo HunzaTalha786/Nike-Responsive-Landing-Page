@@ -60,7 +60,18 @@ nav ul li a:hover {
     width: 100px;
     outline: none;
     border: 0;
+    font-family:"Inter", sans-serif; 
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+.navbar-login-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #D01C28;
+    background-color:#dfdddd;
+
 }
 
 nav .menu-btn i {
@@ -89,22 +100,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: -1;
-    width: 100%;
-    padding: 0 30px;
-    color: #1b1b1b;
-}
-
-.content div {
-    font-size: 40px;
-    font-weight: 700;
-}
 
 .section {
     width: 85%;
@@ -155,7 +150,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 0.5rem;
 }
 
 .btn-shop-now {
@@ -170,7 +165,14 @@ input[type="checkbox"] {
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 2s ease-in-out;
 }
+.btn-shop-now:hover{
+    transform: scale(1.1);
+    color: #D01C28;
+    background-color:#dfdddd;
+}
+
 
 .btn-categori {
     width: 118px;
@@ -184,7 +186,15 @@ input[type="checkbox"] {
     background-color: #FFFFFF;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 2s ease-in-out;
 }
+.btn-categori:hover {
+    transform: scale(1.1);
+    color:#FFFFFF;
+    background-color: #000000;
+
+}
+
 
 .para {
     color: #5A5959;
@@ -236,6 +246,24 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+body{
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+}
+
 @media (max-width: 768px) {
     .text {
         font-size: 4rem;
@@ -251,11 +279,47 @@ input[type="checkbox"] {
     .section {
         justify-content: center;
     }
+    body{
+        animation: transitionIn 1s;
+    }
+    
+    @keyframes transitionIn{
+        from{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+    
+    
+        }
+    
+    }
+
 }
 
 @media (max-width: 1000px) {
     nav {
         padding: 0 40px 0 50px;
+    }
+
+    body{
+        animation: transitionIn 1s;
+    }
+    
+    @keyframes transitionIn{
+        from{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+    
+    
+        }
+    
     }
 }
 
@@ -318,5 +382,23 @@ input[type="checkbox"] {
     nav ul li a:hover {
         background: none;
         color: rgb(252, 252, 252);
+    }
+
+    body{
+        animation: transitionIn 1s;
+    }
+    
+    @keyframes transitionIn{
+        from{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+    
+    
+        }
+    
     }
 }
